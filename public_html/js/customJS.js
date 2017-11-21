@@ -80,10 +80,43 @@ document.onreadystatechange = function () {
   if (state == 'interactive') {
        document.getElementById('contents').style.visibility="hidden";
   } else if (state == 'complete') {
-     
-         document.getElementById('interactive');
+       
+            document.getElementById('interactive');
          document.getElementById('load').style.visibility="hidden";
          document.getElementById('contents').style.visibility="visible";
+       
+         
       
   }
 }
+// ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
+
+//$("#playButton").click(function(){
+//   document.getElementById('myAudio').play();
+//});
+$("#pauseButton").click(function(){
+if($("#pauseButton").hasClass("glyphicon-pause"))
+{
+    $("#pauseButton").removeClass("glyphicon-pause");
+    $("#pauseButton").addClass("glyphicon-play");   
+    document.getElementById('myAudio').pause();
+}
+else{
+    $("#pauseButton").removeClass("glyphicon-play");
+    $("#pauseButton").addClass("glyphicon-pause");
+    document.getElementById('myAudio').play();
+}
+    
+});

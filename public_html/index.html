@@ -22,6 +22,7 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ultra" />
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Dancing Script" />
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Indie Flower" />
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
         <style type="text/css">
             .navbar-inverse .navbar-brand {
@@ -129,22 +130,22 @@ and open the template in the editor.
                 margin-top: 5%;
                 padding-top: 4%;
             }
-            body{
-                font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
-                /*background: #649173;   fallback for old browsers*/
-                /*background: -webkit-linear-gradient(to right, #DBD5A4, #649173);  // Chrome 10-25, Safari 5.1-6*/
-                /*background: linear-gradient(to right, #DBD5A4, #649173);*/
-                /*background: linear-gradient(to right, red , blue);*/
-                /*background-image: url("img_girl.jpg");*/
+            /*            body{
 
-                /* Full height */
-                /*height: 100%;*/
+                            background: #649173;   fallback for old browsers
+                            background: -webkit-linear-gradient(to right, #DBD5A4, #649173);  // Chrome 10-25, Safari 5.1-6
+                            background: linear-gradient(to right, #DBD5A4, #649173);
+                            background: linear-gradient(to right, red , blue);
+                            background-image: url("img_girl.jpg");
 
-                /* Center and scale the image nicely */
-                /*background-position: center;*/
-                /*                background-repeat: repeat;
-                background-size: cover;*/
-            }
+                             Full height
+                            height: 100%;
+
+                             Center and scale the image nicely
+                            background-position: center;
+                                            background-repeat: repeat;
+                            background-size: cover;
+                        }*/
             hr{
                 margin-top: .4%;
                 margin-bottom: .4%
@@ -219,9 +220,10 @@ and open the template in the editor.
     <body>
         <div id="load"></div>
         <div id="contents">
+            <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
 
 
-            <!--<audio id="myAudio" src="external/audio/Pehla_Nasha.mp3" autoplay="autoplay" loop="loop"></audio>-->
+            <audio id="myAudio" src="external/audio/Pehla_Nasha.mp3" autoplay="autoplay" loop="loop"></audio>
             <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
 
                 <div class="container">
@@ -236,6 +238,8 @@ and open the template in the editor.
                             <!--<span class="icon-bar"></span>-->
                         </button>
                         <a href="#header" class="navbar-brand">THE WEDDING</a>
+                        <!--<i id="playButton" class="playPause glyphicon  glyphicon-play" style = "color : #FFF;"></i>-->
+                        <i id="pauseButton" class="playPause glyphicon glyphicon-pause" style = "color : #FFF;"></i>
                     </div>
                     <!-- Collection of nav links and other content for toggling -->
                     <div id="navbarCollapse" class="collapse navbar-collapse">
@@ -245,8 +249,11 @@ and open the template in the editor.
                             <li><a href="#gallery">Gallery</a></li>
                             <li><a href="#events">Events</a></li>
                             <li><a href="#thankYou">Thank You</a></li>
+
                         </ul>
+
                     </div>
+
                 </div>
             </nav>
             <header id="header" class="masthead fixed-height    ">
@@ -534,7 +541,7 @@ and open the template in the editor.
 
 
                 </section>
-                <!--<p style="color: white">Here I am</p>-->
+                <p style="color: white">Here I am</p>
                 <section id="events" class="fixed-height" >
                     <div class="row ">
                         <div class="col-sm-12 ">

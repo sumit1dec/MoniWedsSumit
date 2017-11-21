@@ -112,7 +112,7 @@
  .thankYouText{
     text-align: center;
     font-family: Pacifico;
-    font-size: 28px;
+    font-size: 29px;
     margin-top: 4%;
             }
             .eventsInvite{
@@ -203,7 +203,7 @@
             }
      .story-header{
                 text-align: center;
-                font-size: 3vw;
+                font-size: 10vw;
                 color: #01579B;
                 height: 145px;
                 /* margin-top: 4%; */
@@ -221,7 +221,7 @@
     margin-bottom: 3%;  
      }
             .story-content{
-                height: 202px;
+                /*height: 202px;*/
             }
 	.carousel-inner .active.left { left: -50%; }
 	.carousel-inner .next        { left:  50%; }
@@ -535,5 +535,55 @@ header.masthead {
     height:100%;
     position:fixed;
     z-index:9999;
-    background:url("https://www.creditmutuel.fr/cmne/fr/banques/webservices/nswr/images/loading.gif") no-repeat center center rgba(0,0,0,0.25)
+    background:url("../external/images/loading.gif") no-repeat center center #fff;
            }
+           #return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+body{
+    overflow:scroll;
+    overflow-scrolling: touch;
+    background: cornsilk;
+    font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+.playPause{
+    float:left;height:50px;padding:15px 15px;font-size:30px;line-height:20px;
+}
