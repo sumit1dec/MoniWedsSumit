@@ -15,6 +15,16 @@
     /* margin-top: 4%; */
     padding-top: 2%;
     font-family: 'Unica One';}
+     .story-header-gallery{
+    text-align: center;
+    font-size: 11vw;
+    color: #01579B;
+    height: 110px;
+    /* margin-top: 4%; */
+    padding-top: 2%;
+    font-family: 'Unica One';
+    margin-bottom: 12%;   
+     }
      .story-content{
                 height: 100px;
                 margin-top: 20%;
@@ -73,9 +83,85 @@
              .fixed-height{
                 min-height: 100vh;
             }
-
+            header.masthead .header-content .header-content-inner h1 {
+        font-family: Monoton;
+      font-size: 30px;
+      /*font-weight: 700;*/
+      margin-top: 153%;
+      margin-bottom: 0;
+      text-transform: uppercase; }
+            .galleryHeading{
+                font-family: Pacifico;
+                font-size: 26px;
+                text-align: center;
+                margin-bottom: 8%;
+            }
+            .glyphicon-align-left{
+                text-align: left;
+                margin-top: 0.7%;
+                font-size: 28px;
+            }
+            .glyphicon-align-right{
+                text-align: right;
+                margin-top: 0.7%;
+                font-size: 28px;
+            }
+            .gallery-contents{
+                margin-bottom: 24%;
+            }
+ .thankYouText{
+    text-align: center;
+    font-family: Pacifico;
+    font-size: 28px;
+    margin-top: 4%;
+            }
+            .eventsInvite{
+                       width: 100%;
+    max-width: 100%;
+    height: 395px;
+    border: 5px solid #f05f40;
+    border-radius: 50%;
+            }
 }
 @media (min-width: 767px) and (max-width: 992px ) {
+    .eventsInvite{
+                       width: 100%;
+    max-width: 100%;
+    height: 395px;
+    border: 5px solid #f05f40;
+    border-radius: 50%;
+            }
+     .thankYouText{
+    text-align: center;
+    font-family: Pacifico;
+    font-size: 40px;
+    margin-top: 4%;
+            }
+    .galleryHeading{
+                font-family: Pacifico;
+                font-size: 40px;
+                text-align: center;
+            }
+            .glyphicon-align-left{
+                text-align: left;
+                margin-top: 0.7%;
+                font-size: 25px;
+            }
+            .glyphicon-align-right{
+                text-align: right;
+                margin-top: 0.7%;
+                font-size: 25px;
+            }
+            .gallery-contents{
+                margin-bottom: 6%;
+            }
+    header.masthead .header-content .header-content-inner h1 {
+        font-family: Monoton;
+      font-size: 30px;
+      /*font-weight: 700;*/
+      margin-top: 70%;
+      margin-bottom: 0;
+      text-transform: uppercase; }
      .fixed-height{
                 min-height: 100vh;
             }
@@ -103,7 +189,7 @@
                 text-align: center;
                 font-family: 'Lobster', cursive;
                 color: white;
-                background: #222;
+                /*background: #222;*/
 
 
             }
@@ -124,6 +210,16 @@
                 padding-top: 2%;
                 font-family: 'Unica One';
             }
+              .story-header-gallery{
+             text-align: center;
+    font-size: 7vw;
+    color: #01579B;
+    height: 110px;
+    /* margin-top: 4%; */
+    padding-top: 2%;
+    font-family: 'Unica One';
+    margin-bottom: 3%;  
+     }
             .story-content{
                 height: 202px;
             }
@@ -135,6 +231,44 @@
 	.active > div:first-child + div { display:block; }
 }
 @media (min-width: 992px ) {
+    .eventsInvite{
+                       width: 100%;
+    max-width: 100%;
+    height: 430px;
+    border: 5px solid #f05f40;
+    border-radius: 50%;
+            }
+     .thankYouText{
+    text-align: center;
+    font-family: Pacifico;
+    font-size: 40px;
+    margin-top: 4%;
+            }
+    .galleryHeading{
+                font-family: Pacifico;
+                font-size: 40px;
+                text-align: center;
+            }
+            .glyphicon-align-left{
+                text-align: left;
+                margin-top: 0.7%;
+                font-size: 25px;
+            }
+            .glyphicon-align-right{
+                text-align: right;
+                margin-top: 0.7%;
+                font-size: 25px;
+            }
+            .gallery-contents{
+                margin-bottom: 6%;
+            }
+    header.masthead .header-content .header-content-inner h1 {
+        font-family: Monoton;
+      font-size: 30px;
+      /*font-weight: 700;*/
+      margin-top: 70%;
+      margin-bottom: 0;
+      text-transform: uppercase; }
      .fixed-height{
                 min-height: 100vh;
             }
@@ -163,7 +297,7 @@
                 text-align: center;
                 font-family: 'Lobster', cursive;
                 color: white;
-                background: #222;
+                /*background: #222;*/
 
 
             }
@@ -186,13 +320,23 @@
             }
      .story-header{
                 text-align: center;
-                font-size: 3vw;
+                font-size: 5vw;
                 color: #01579B;
                 height: 145px;
                 /* margin-top: 4%; */
                 padding-top: 2%;
                 font-family: 'Unica One';
             }
+              .story-header-gallery{
+        text-align: center;
+    font-size: 5vw;
+    color: #01579B;
+    height: 110px;
+    /* margin-top: 4%; */
+    padding-top: 2%;
+    font-family: 'Unica One';
+    margin-bottom: 5%;   
+     }
             .story-content{
                 height: 202px;
             }
@@ -231,13 +375,13 @@ header.masthead {
     width: 100%;
     padding: 150px 15px 100px;
     text-align: center; }
-    header.masthead .header-content .header-content-inner h1 {
+/*    header.masthead .header-content .header-content-inner h1 {
         font-family: Monoton;
       font-size: 30px;
-      /*font-weight: 700;*/
+      font-weight: 700;
       margin-top: 70%;
       margin-bottom: 0;
-      text-transform: uppercase; }
+      text-transform: uppercase; }*/
     header.masthead .header-content .header-content-inner hr {
       margin: 30px auto; }
     header.masthead .header-content .header-content-inner p {
@@ -261,9 +405,9 @@ header.masthead {
           margin-right: auto;
           margin-left: auto; }
           header.masthead .header-content .header-content-inner h1 {
-            font-size: 50px; }
+            font-size: 35px; }
           header.masthead .header-content .header-content-inner p {
-            font-size: 50px;
+            font-size: 36px;
             max-width: 80%;
             margin-right: auto;
             margin-left: auto; 
@@ -366,24 +510,30 @@ header.masthead {
             .eventsInviteReception{
                 
             }
-            .eventsInvite{
-                    width: 100%;
-                    max-width: 100%;
-                     height: 438px;
-                      border: 5px solid #f05f40;
-                     border-radius: 50%;
-            }
+/*            .eventsInvite{
+                       width: 100%;
+    max-width: 100%;
+    height: 395px;
+    border: 5px solid #f05f40;
+    border-radius: 50%;
+            }*/
             .thankYou{
                 background-color: cornsilk;
     
             }
-            .thankYouText{
+/*            .thankYouText{
     text-align: center;
     font-family: Pacifico;
     font-size: 40px;
     margin-top: 4%;
-            }
+            }*/
             .centerImage{
                     text-align: -webkit-center;
             }
-           
+           #load{
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:9999;
+    background:url("https://www.creditmutuel.fr/cmne/fr/banques/webservices/nswr/images/loading.gif") no-repeat center center rgba(0,0,0,0.25)
+           }

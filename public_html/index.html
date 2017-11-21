@@ -24,6 +24,9 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Indie Flower" />
 
         <style type="text/css">
+            .navbar-inverse .navbar-brand {
+                color: #fff;
+            }
             .carousel{
                 background: #f05f40;
                 margin-top: 1%;
@@ -38,6 +41,8 @@ and open the template in the editor.
             .carousel .item img{
                 margin: 0 auto;
                 border-radius: 3%;
+                height: 36vh;
+                max-height: 36vh;
                 /*max-height: 400px;*/
             }
             /*            @media (max-width: 767px) {
@@ -187,24 +192,24 @@ and open the template in the editor.
             color: white;
             background: #222;
             }*/
-            .galleryHeading{
-                font-family: Pacifico;
-                font-size: 40px;
-                text-align: center;
-            }
-            .glyphicon-align-left{
-                text-align: left;
-                margin-top: 0.7%;
-                font-size: 25px;
-            }
-            .glyphicon-align-right{
-                text-align: right;
-                margin-top: 0.7%;
-                font-size: 25px;
-            }
-            .gallery-contents{
-                margin-bottom: 6%;
-            }
+            /*            .galleryHeading{
+                            font-family: Pacifico;
+                            font-size: 40px;
+                            text-align: center;
+                        }
+                        .glyphicon-align-left{
+                            text-align: left;
+                            margin-top: 0.7%;
+                            font-size: 25px;
+                        }
+                        .glyphicon-align-right{
+                            text-align: right;
+                            margin-top: 0.7%;
+                            font-size: 25px;
+                        }
+                        .gallery-contents{
+                            margin-bottom: 6%;
+                        }*/
             .homeHeading{
 
             }
@@ -212,376 +217,378 @@ and open the template in the editor.
         </style>
     </head>
     <body>
+        <div id="load"></div>
+        <div id="contents">
 
 
-        <!--<audio id="myAudio" src="external/audio/Pehla_Nasha.mp3" autoplay="autoplay" loop="loop"></audio>-->
-        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+            <!--<audio id="myAudio" src="external/audio/Pehla_Nasha.mp3" autoplay="autoplay" loop="loop"></audio>-->
+            <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
 
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a href="#header" class="navbar-brand">THE WEDDING</a>
-                </div>
-                <!-- Collection of nav links and other content for toggling -->
-                <div id="navbarCollapse" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav  navbar-right">
-                        <li ><a  href="#ourStory">Our Story</a></li>
-                        <li><a href="#timer">Countdown</a></li>
-                        <li><a href="#events">Events</a></li>
-                        <li><a href="#">Messages</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#thankYou">Thank You</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <header id="header" class="masthead fixed-height    ">
-            <div class="header-content">
-                <div class="header-content-inner">
-                    <h1 id="homeHeading">We Are Getting Married.<br> Save The Date.</h1>
-                    <p style="color:#fff">10th December, 2017.</p>
-                </div>
-            </div>
-        </header>
-        <!--<p style="color: white">Here I am</p>-->
-        <div class="container-fluid">
-
-            <section id="ourStory" class="fixed-height" >
-                <div class="row story-content">
-                    <p class="col-xs-12 col-md-12 col-lg-12 story-header">OUR STORY...</p>
-                </div>
-                <div class="row" >
-                    <div class="col-lg-4 col-md-4 col-xs-12 "><img  src="external/images/Monica.jpg" class="img-circle myStoryImg" alt="Cinque Terre"></div>
-                    <div class="col-lg-4 col-md-4 col-xs-12">
-                        <p class="textParaImg">Technically, we met each other when we did not even know the meaning of any relationship. It was in the year 1994, when we were hardly 4-5 years old. Soon we became friends and our friendship grew stronger with time. We never imagined that our friendship will turn into this beautiful relationship ever. In past few years we relaized that we are each other's destiny and we would love to spend the rest of our lives with each other. Friendship is the essence of every relationship and we both feel extremely lucky that before anything else, we were, we are and we will be friends forever. Our families have been always supportive and it is because of their support and understanding, we are finally tying the knots. Thanks to all our loved ones for making this special day possible for us.</p>
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button"  data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle collapsed">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <!--<span class="icon-bar"></span>-->
+                            <!--<span class="icon-bar"></span>-->
+                        </button>
+                        <a href="#header" class="navbar-brand">THE WEDDING</a>
                     </div>
-
-                    <div class="col-lg-4 col-md-4 col-xs-12 " ><img src="external/images/Sumit.jpg" class="img-circle myStoryImg" alt="Cinque Terre"></div>
-                </div>
-            </section>
-            <section id="timer" class="fixed-height">
-                <div class="row">
-                    <p class="col-sm-12 countdown-header">The Countdown  is  on  !!!</p>
-                </div>
-                <div class="row" >
-                    <div class="col-sm-12 countdown" >
-                        <div class="" id="days"></div>
-                        <div class="" id="hours"></div>
-                        <div class="" id="minutes"></div>
-                        <div class="" id="seconds"></div>
+                    <!-- Collection of nav links and other content for toggling -->
+                    <div id="navbarCollapse" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav  navbar-right">
+                            <li ><a  href="#ourStory">Our Story</a></li>
+                            <li><a href="#timer">Countdown</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#events">Events</a></li>
+                            <li><a href="#thankYou">Thank You</a></li>
+                        </ul>
                     </div>
                 </div>
-            </section>
-            <section id="gallery" class="fixed-height">
-
-                <div class="col-md-12 ">
-                    <p class="story-header">Welcome to the Gallery</p>
-                    <div class="gallery-contents">
-                        <div class="row">
-                            <div class="col-sm-4 col-xs-4 col-md-4 glyphicon glyphicon-align-right"></div>
-                            <div class="col-sm-4 col-xs-4 col-md-4 glyphicon"><p class="galleryHeading">Our Engagement Clicks</p></div>
-                            <div class="col-sm-4 col-xs-4 col-md-4 glyphicon glyphicon-align-left "></div>
-
-                        </div>
-                        <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="myCarousel">
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/engagement/engage1.JPG" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/engagement/engage2.JPG" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/engagement/engage3.JPG" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/engagement/engage4.JPG" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/engagement/engage6.JPG" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/engagement/engage7.JPG" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/engagement/engage8.JPG" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/engagement/engage9.JPG" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/engagement/engage10.JPG" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/engagement/engage11.JPG" class="img-responsive"></a></div>
-                                </div>
-                            </div>
-                            <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                            <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="gallery-contents">
-                        <div class="row">
-                            <div class="col-sm-4 col-xs-4 col-md-4 glyphicon glyphicon-align-right"></div>
-                            <div class="col-sm-4 col-xs-4 col-md-4 glyphicon"><p class="galleryHeading">Meet Our Family</p></div>
-                            <div class="col-sm-4 col-xs-4 col-md-4 glyphicon glyphicon-align-left "></div>
-
-                        </div>
-                        <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="myCarousel1">
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam1.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam2.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam3.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam4.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam5.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam6.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam7.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam8.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam9.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam10.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam11.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam12.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam13.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam14.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam15.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam16.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam17.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam18.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam19.jpg" class="img-responsive"></a></div>
-                                </div>
-
-                            </div>
-                            <a class="left carousel-control" href="#myCarousel1" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                            <a class="right carousel-control" href="#myCarousel1" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="gallery-contents">
-                        <div class="row">
-                            <div class="col-sm-4 col-xs-2 col-md-4 glyphicon glyphicon-align-right"></div>
-                            <div class="col-sm-4 col-xs-8 col-md-4 glyphicon"><p class="galleryHeading">Meet Our Crazy Friends</p></div>
-                            <div class="col-sm-4 col-xs-2 col-md-4 glyphicon glyphicon-align-left "></div>
-
-                        </div>
-                        <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="myCarousel2">
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri1.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item ">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri2.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item ">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri3.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item ">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri4.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item ">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri5.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item ">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri6.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item ">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri7.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item ">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri8.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item ">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri9.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item ">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri10.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item ">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri11.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item ">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri12.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item ">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri13.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item ">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri14.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item ">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri15.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item ">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri16.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item ">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri17.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item ">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri18.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item ">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri19.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item ">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri20.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item ">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri21.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item ">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri22.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item ">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri23.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item ">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri24.jpg" class="img-responsive"></a></div>
-                                </div>
-
-
-
-                            </div>
-                            <a class="left carousel-control" href="#myCarousel2" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                            <a class="right carousel-control" href="#myCarousel2" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="gallery-contents">
-                        <div class="row">
-                            <div class="col-sm-4 col-xs-2 col-md-4 glyphicon glyphicon-align-right"></div>
-                            <div class="col-sm-4 col-xs-8 col-md-4 glyphicon"><p class="galleryHeading">We Together</p></div>
-                            <div class="col-sm-4 col-xs-2 col-md-4 glyphicon glyphicon-align-left "></div>
-
-                        </div>
-                        <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="myCarousel3">
-                            <div class="carousel-inner">
-                                <div class="item active">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Us/Us1.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item ">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Us/Us2.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item ">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Us/Us3.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item ">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Us/Us4.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item ">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Us/Us5.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item ">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Us/Us6.jpg" class="img-responsive"></a></div>
-                                </div>
-                                <div class="item ">
-                                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Us/Us7.jpg" class="img-responsive"></a></div>
-                                </div>
-                            </div>
-                            <a class="left carousel-control" href="#myCarousel3" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                            <a class="right carousel-control" href="#myCarousel3" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
-                        </div>
+            </nav>
+            <header id="header" class="masthead fixed-height    ">
+                <div class="header-content">
+                    <div class="header-content-inner">
+                        <h1 id="homeHeading">We Are Getting Married.<br> Save The Date.</h1>
+                        <p style="color:#fff">10th December, 2017.</p>
                     </div>
                 </div>
-
-
-            </section>
+            </header>
             <!--<p style="color: white">Here I am</p>-->
-            <section id="events" class="fixed-height" >
-                <div class="row ">
-                    <div class="col-sm-12 ">
-                        <p class=" story-header">Events - When & Where ?</p>
+            <div class="container-fluid">
 
+                <section id="ourStory" class="fixed-height" >
+                    <div class="row story-content">
+                        <p class="col-xs-12 col-md-12 col-lg-12 story-header">OUR STORY...</p>
                     </div>
+                    <div class="row" >
+                        <div class="col-lg-4 col-md-4 col-xs-12 "><img  src="external/images/Monica.jpg" class="img-circle myStoryImg" alt="Cinque Terre"></div>
+                        <div class="col-lg-4 col-md-4 col-xs-12">
+                            <p class="textParaImg">Technically, we met each other when we did not even know the meaning of any relationship. It was in the year 1994, when we were hardly 4-5 years old. Soon we became friends and our friendship grew stronger with time. We never imagined that our friendship will turn into this beautiful relationship ever. In past few years we relaized that we are each other's destiny and we would love to spend the rest of our lives with each other. Friendship is the essence of every relationship and we both feel extremely lucky that before anything else, we were, we are and we will be friends forever. Our families have been always supportive and it is because of their support and understanding, we are finally tying the knots. Thanks to all our loved ones for making this special day possible for us.</p>
+                        </div>
 
-                </div>
-                <div class="row">
-                    <div class="col-sm-3 eventsInviteSangeet">
-                        <img class="eventsInvite" src="external/images/sangeet.jpg" class="img-responsive" alt=""/>
-
-                        <div class="col-sm-12 ">
-                            <p style="font-size: 50px;color: #222;">Sangeet</p><br>
-                            <p>#402, Ishta Homes Apartment, B.Narayanpura, Mahadevpura, Bangalore</p>
-                            <p><strong>Time : 7:00 pm Onwards</strong>
+                        <div class="col-lg-4 col-md-4 col-xs-12 " ><img src="external/images/Sumit.jpg" class="img-circle myStoryImg" alt="Cinque Terre"></div>
+                    </div>
+                </section>
+                <section id="timer" class="fixed-height">
+                    <div class="row">
+                        <p class="col-sm-12 countdown-header">The Countdown  is  on  !!!</p>
+                    </div>
+                    <div class="row" >
+                        <div class="col-sm-12 countdown" >
+                            <div class="" id="days"></div>
+                            <div class="" id="hours"></div>
+                            <div class="" id="minutes"></div>
+                            <div class="" id="seconds"></div>
                         </div>
                     </div>
-                    <div class="col-sm-3 eventsInviteSangeet" >
-                        <img class="eventsInvite" src="external/images/wedding.jpg" class="img-responsive" alt=""/>
+                </section>
+                <section id="gallery" class="fixed-height">
 
-                        <div class="col-sm-12 ">
-                            <p style="font-size: 50px;color: #222;">Barat & Shaadi</p><br>
-                            <p>#402, Ishta Homes Apartment, B.Narayanpura, Mahadevpura, Bangalore</p>
-                            <p><strong>Time : 7:00 pm Onwards</strong>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 eventsInviteSangeet">
-                        <img class="eventsInvite" src="external/images/reception.jpg" class="img-responsive" alt=""/>
+                    <div class="col-md-12 ">
+                        <p class="story-header-gallery">Welcome to the Gallery</p>
+                        <div class="gallery-contents">
+                            <div class="row">
+                                <div class="col-sm-4 col-xs-2 col-md-4 glyphicon glyphicon-align-right"></div>
+                                <div class="col-sm-4 col-xs-8 col-md-4 glyphicon"><p class="galleryHeading">Our Engagement Clicks</p></div>
+                                <div class="col-sm-4 col-xs-2 col-md-4 glyphicon glyphicon-align-left "></div>
 
-                        <div class="col-sm-12 ">
-                            <p style="font-size: 50px; color: #222;">Reception</p><br>
-                            <p>#402, Ishta Homes Apartment, B.Narayanpura, Mahadevpura, Bangalore</p>
-                            <p><strong>Time : 7:00 pm Onwards</strong>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-            <section id="thankYou" >
-                <div class="row thankYou">
-                    <div class="col-lg-12 col-sm-12 col-md-12">
-                        <p class="col-sm-offset-3 col-sm-6 thankYouText">Because you have shared in our lives by your friendship and love, we together with our parents invite you to share the beginning of our new life together when we exchange marriage vows.</p>
-                        <div class="row">
-                            <div class="col-sm-12 col-md-12 col-lg-12 centerImage">
-                                <img src="external/images/thankYou.png" class="img-responsive " alt="Thank You"/>
                             </div>
+                            <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="myCarousel">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/engagement/engage1.JPG" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/engagement/engage2.JPG" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/engagement/engage3.JPG" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/engagement/engage4.JPG" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/engagement/engage6.JPG" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/engagement/engage7.JPG" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/engagement/engage8.JPG" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/engagement/engage9.JPG" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/engagement/engage10.JPG" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/engagement/engage11.JPG" class="img-responsive"></a></div>
+                                    </div>
+                                </div>
+                                <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                                <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="gallery-contents">
+                            <div class="row">
+                                <div class="col-sm-4 col-xs-2 col-md-4 glyphicon glyphicon-align-right"></div>
+                                <div class="col-sm-4 col-xs-8 col-md-4 glyphicon"><p class="galleryHeading">Meet Our Family</p></div>
+                                <div class="col-sm-4 col-xs-2 col-md-4 glyphicon glyphicon-align-left "></div>
 
+                            </div>
+                            <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="myCarousel1">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam1.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam2.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam3.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam4.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam5.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam6.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam7.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam8.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam9.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam10.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam11.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam12.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam13.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam14.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam15.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam16.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam17.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam18.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Family/Fam19.jpg" class="img-responsive"></a></div>
+                                    </div>
+
+                                </div>
+                                <a class="left carousel-control" href="#myCarousel1" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                                <a class="right carousel-control" href="#myCarousel1" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="gallery-contents">
+                            <div class="row">
+                                <div class="col-sm-4 col-xs-2 col-md-4 glyphicon glyphicon-align-right"></div>
+                                <div class="col-sm-4 col-xs-8 col-md-4 glyphicon"><p class="galleryHeading">Meet Our Crazy Friends</p></div>
+                                <div class="col-sm-4 col-xs-2 col-md-4 glyphicon glyphicon-align-left "></div>
+
+                            </div>
+                            <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="myCarousel2">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri1.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri2.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri3.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri4.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri5.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri6.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri7.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri8.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri9.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri10.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri11.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri12.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri13.JPG" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri14.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri15.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri16.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri17.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri18.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri19.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri20.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri21.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri22.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri23.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Friends/Fri24.jpg" class="img-responsive"></a></div>
+                                    </div>
+
+
+
+                                </div>
+                                <a class="left carousel-control" href="#myCarousel2" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                                <a class="right carousel-control" href="#myCarousel2" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="gallery-contents">
+                            <div class="row">
+                                <div class="col-sm-4 col-xs-2 col-md-4 glyphicon glyphicon-align-right"></div>
+                                <div class="col-sm-4 col-xs-8 col-md-4 glyphicon"><p class="galleryHeading">We Together</p></div>
+                                <div class="col-sm-4 col-xs-2 col-md-4 glyphicon glyphicon-align-left "></div>
+
+                            </div>
+                            <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="myCarousel3">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Us/Us1.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Us/Us2.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Us/Us3.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Us/Us4.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Us/Us5.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Us/Us6.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                    <div class="item ">
+                                        <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="external/images/Us/Us7.jpg" class="img-responsive"></a></div>
+                                    </div>
+                                </div>
+                                <a class="left carousel-control" href="#myCarousel3" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                                <a class="right carousel-control" href="#myCarousel3" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                            </div>
                         </div>
                     </div>
-            </section>
 
 
+                </section>
+                <!--<p style="color: white">Here I am</p>-->
+                <section id="events" class="fixed-height" >
+                    <div class="row ">
+                        <div class="col-sm-12 ">
+                            <p class="story-header-gallery">Events - When & Where ?</p>
+
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 eventsInviteSangeet">
+                            <img class="eventsInvite" src="external/images/sangeet.jpg" class="img-responsive" alt=""/>
+
+                            <div class="col-sm-12 ">
+                                <p style="font-size: 50px;color: #222;">Sangeet & Mehendi</p><br>
+                                <p>#402, Ishta Homes Apartment, B.Narayanpura, Mahadevpura, Bangalore</p>
+                                <p><strong>Time : 7:00 pm Onwards</strong>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 eventsInviteSangeet" >
+                            <img class="eventsInvite" src="external/images/wedding.jpg" class="img-responsive" alt=""/>
+
+                            <div class="col-sm-12 ">
+                                <p style="font-size: 50px;color: #222;">Barat & Shaadi</p><br>
+                                <p>#402, Ishta Homes Apartment, B.Narayanpura, Mahadevpura, Bangalore</p>
+                                <p><strong>Time : 7:00 pm Onwards</strong>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 eventsInviteSangeet">
+                            <img class="eventsInvite" src="external/images/reception.jpg" class="img-responsive" alt=""/>
+
+                            <div class="col-sm-12 ">
+                                <p style="font-size: 50px; color: #222;">Reception</p><br>
+                                <p>#402, Ishta Homes Apartment, B.Narayanpura, Mahadevpura, Bangalore</p>
+                                <p><strong>Time : 7:00 pm Onwards</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                <section id="thankYou" >
+                    <div class="row thankYou">
+                        <div class="col-lg-12 col-sm-12 col-md-12">
+                            <p class="col-sm-offset-3 col-sm-6  col-xs-12 thankYouText">Because you have shared in our lives by your friendship and love, we together with our parents invite you to share the beginning of our new life together when we exchange marriage vows.</p>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12 centerImage">
+                                    <img src="external/images/thankYou.png" class="img-responsive " alt="Thank You"/>
+                                </div>
+
+                            </div>
+                        </div>
+                </section>
+
+
+            </div>
         </div>
     </body>
 
