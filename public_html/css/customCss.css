@@ -1,3 +1,23 @@
+@font-face {
+    font-family: myLobster;
+    src: url(../external/fonts/myLobster.woff2);
+}
+@font-face {
+    font-family: myMonoton;
+    src: url(../external/fonts/myMonoton.woff);
+}
+@font-face {
+    font-family: myUnicaOne;
+    src: url(../external/fonts/myUnicaOne.woff2);
+}
+@font-face {
+    font-family: myIndieFlower;
+    src: url(../external/fonts/myIndieFlower.woff2);
+}
+@font-face {
+    font-family: myPacifico;
+    src: url(../external/fonts/myPacifico.woff2);
+}
 .carousel{
                 background: #f05f40;
                 margin-top: 1%;
@@ -14,7 +34,7 @@
     height: 110px;
     /* margin-top: 4%; */
     padding-top: 2%;
-    font-family: 'Unica One';}
+    font-family: myUnicaOne;}
      .story-header-gallery{
     text-align: center;
     font-size: 11vw;
@@ -22,7 +42,7 @@
     height: 110px;
     /* margin-top: 4%; */
     padding-top: 2%;
-    font-family: 'Unica One';
+    font-family: myUnicaOne;
     margin-bottom: 12%;   
      }
      .story-content{
@@ -37,7 +57,7 @@
          .textParaImg{
                 color: #222;
                 
-                font-family: Indie Flower;
+                font-family: myIndieFlower;
                 font-size: 18px;
                 font-weight: bold;
                 text-align: center;
@@ -57,7 +77,7 @@
                 padding: 20px;
                 font-size: 40px;
                 text-align: center;
-                font-family: 'Lobster', cursive;
+                font-family: 'myLobster', cursive;
                 color: white;
                 /*background: #222;*/
             }
@@ -84,14 +104,14 @@
                 min-height: 100vh;
             }
             header.masthead .header-content .header-content-inner h1 {
-        font-family: Monoton;
+        font-family: myMonoton;
       font-size: 30px;
       /*font-weight: 700;*/
       margin-top: 153%;
       margin-bottom: 0;
       text-transform: uppercase; }
             .galleryHeading{
-                font-family: Pacifico;
+                font-family: myPacifico;
                 font-size: 26px;
                 text-align: center;
                 margin-bottom: 8%;
@@ -111,7 +131,7 @@
             }
  .thankYouText{
     text-align: center;
-    font-family: Pacifico;
+    font-family: myPacifico;
     font-size: 29px;
     margin-top: 4%;
             }
@@ -133,14 +153,15 @@
             }
      .thankYouText{
     text-align: center;
-    font-family: Pacifico;
+    font-family: myPacifico;
     font-size: 40px;
     margin-top: 4%;
             }
     .galleryHeading{
-                font-family: Pacifico;
+                font-family: myPacifico;
                 font-size: 40px;
                 text-align: center;
+                margin-bottom: 6%;
             }
             .glyphicon-align-left{
                 text-align: left;
@@ -153,10 +174,10 @@
                 font-size: 25px;
             }
             .gallery-contents{
-                margin-bottom: 6%;
+                margin-bottom: 13%;
             }
     header.masthead .header-content .header-content-inner h1 {
-        font-family: Monoton;
+        font-family: myMonoton;
       font-size: 30px;
       /*font-weight: 700;*/
       margin-top: 70%;
@@ -166,20 +187,24 @@
                 min-height: 100vh;
             }
     #days {
-                font-size: 10vw;
-                color: #db4844;
+                    font-size: 27vw;
+                    color: #db4844;
+                    padding-bottom: 2%;
             }
             #hours {
-                font-size: 8vw;
+                font-size: 22vw;
                 color: #f07c22;
+                padding-bottom: 2%;
             }
             #minutes {
-                font-size: 6vw;
+                font-size: 17vw;
                 color: #f6da74;
+                padding-bottom: 2%;
             }
             #seconds {
-                font-size: 4vw;
+                font-size: 12vw;
                 color: #abcd58;
+                padding-bottom: 2%;
             }
      .countdown  {
                 /*display: inline-block;*/
@@ -187,7 +212,7 @@
                 padding: 20px;
                 font-size: 40px;
                 text-align: center;
-                font-family: 'Lobster', cursive;
+                font-family: 'myLobster', cursive;
                 color: white;
                 /*background: #222;*/
 
@@ -208,16 +233,16 @@
                 height: 145px;
                 /* margin-top: 4%; */
                 padding-top: 2%;
-                font-family: 'Unica One';
+                font-family: myUnicaOne;
             }
               .story-header-gallery{
              text-align: center;
-    font-size: 7vw;
+    font-size: 9vw;
     color: #01579B;
     height: 110px;
     /* margin-top: 4%; */
     padding-top: 2%;
-    font-family: 'Unica One';
+    font-family: myUnicaOne;
     margin-bottom: 3%;  
      }
             .story-content{
@@ -229,6 +254,15 @@
 	.active > div { display:none; }
 	.active > div:first-child { display:block; }
 	.active > div:first-child + div { display:block; }
+         .textParaImg{
+                color: #222;
+                
+                font-family: myIndieFlower;
+                font-size: 26px;
+                font-weight: bold;
+                text-align: center;
+
+            }
 }
 @media (min-width: 992px ) {
     .eventsInvite{
@@ -240,12 +274,12 @@
             }
      .thankYouText{
     text-align: center;
-    font-family: Pacifico;
+    font-family: myPacifico;
     font-size: 40px;
     margin-top: 4%;
             }
     .galleryHeading{
-                font-family: Pacifico;
+                font-family: myPacifico;
                 font-size: 40px;
                 text-align: center;
             }
@@ -263,7 +297,7 @@
                 margin-bottom: 6%;
             }
     header.masthead .header-content .header-content-inner h1 {
-        font-family: Monoton;
+        font-family: myMonoton;
       font-size: 30px;
       /*font-weight: 700;*/
       margin-top: 70%;
@@ -295,7 +329,7 @@
                 padding: 20px;
                 font-size: 40px;
                 text-align: center;
-                font-family: 'Lobster', cursive;
+                font-family: 'myLobster', cursive;
                 color: white;
                 /*background: #222;*/
 
@@ -312,7 +346,7 @@
      .textParaImg{
                 color: #222;
                 
-                font-family: Indie Flower;
+                font-family: myIndieFlower;
                 font-size: 26px;
                 font-weight: bold;
                 text-align: center;
@@ -325,7 +359,7 @@
                 height: 145px;
                 /* margin-top: 4%; */
                 padding-top: 2%;
-                font-family: 'Unica One';
+                font-family: myUnicaOne;
             }
               .story-header-gallery{
         text-align: center;
@@ -334,7 +368,7 @@
     height: 110px;
     /* margin-top: 4%; */
     padding-top: 2%;
-    font-family: 'Unica One';
+    font-family: myUnicaOne;
     margin-bottom: 5%;   
      }
             .story-content{
@@ -376,7 +410,7 @@ header.masthead {
     padding: 150px 15px 100px;
     text-align: center; }
 /*    header.masthead .header-content .header-content-inner h1 {
-        font-family: Monoton;
+        font-family: myMonoton;
       font-size: 30px;
       font-weight: 700;
       margin-top: 70%;
@@ -390,6 +424,28 @@ header.masthead {
       margin-bottom: 50px;
       color: rgba(255, 255, 255, 0.7); }
   @media (max-width: 767px) {
+      .pageFooter1{
+    float:  left;
+    font-size: 6px;
+}
+.pageFooter2{
+    float:  right;
+    font-size: 6px;
+}
+      .event-name{
+    font-size: 50px;color: #222;
+}
+      .event-address{    
+}
+.event-time{
+    
+}
+      .image-position{
+    border-radius: 6px;
+    max-height: 189px;
+    margin-left: 1%;
+    margin-bottom: 11%;
+}
     header.masthead {
       height: 100%;
       min-height: 100vh; }
@@ -411,8 +467,33 @@ header.masthead {
             max-width: 80%;
             margin-right: auto;
             margin-left: auto; 
-          font-family: Lobster;} }
+          font-family: myLobster;} }
   @media (max-width: 991px) and (min-width: 768px) {
+      .pageFooter1{
+    float:  left;
+    font-size: 7px;
+}
+.pageFooter2{
+    float:  right;
+    font-size: 7px;
+}
+      .event-name{
+    font-size: 50px;color: #222;
+}
+.event-reception{
+        margin-bottom: 15vh;
+}
+      .event-address{    
+}
+.event-time{
+    
+}
+      .image-position{
+    border-radius: 6px;
+    max-height: 282px;
+    margin-left: 2%;
+    margin-bottom: 11%;
+      }
     header.masthead {
       height: 100%;
       min-height: 98vh; }
@@ -434,8 +515,23 @@ header.masthead {
             max-width: 80%;
             margin-right: auto;
             margin-left: auto; 
-          font-family: Lobster;} }
+          font-family: myLobster;} }
   @media (max-width: 1023px) and (min-width: 992px) {
+      .pageFooter1{
+    float:  left;
+}
+.pageFooter2{
+    float:  right;
+}
+      .event-name{
+    font-size: 50px;color: #222;
+}
+      .event-address{    
+}
+.event-time{
+    
+}
+      
     header.masthead {
       height: 100%;
       min-height: 98vh; }
@@ -454,11 +550,36 @@ header.masthead {
             font-size: 50px; }
           header.masthead .header-content .header-content-inner p {
             font-size: 50px;
-            font-family: Lobster;
+            font-family: myLobster;
             max-width: 80%;
             margin-right: auto;
             margin-left: auto; } }
     @media (min-width: 1024px) {
+        .pageFooter1{
+    float:  left;
+    font-size: 10px;
+}
+.pageFooter2{
+    float:  right;
+    font-size: 10px;
+}
+        .event-name{
+    font-size: 50px;color: #222;
+}
+      .event-address{    
+}
+.event-time{
+    
+}
+        .image-position{
+       border-radius: 6px;
+    max-height: 515px;
+    margin-left: 16%;
+    margin-bottom: 11%;
+    background: url(../external/images/cards/frame.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
     header.masthead {
       height: 100%;
       min-height: 100vh; }
@@ -480,7 +601,7 @@ header.masthead {
             max-width: 80%;
             margin-right: auto;
             margin-left: auto;
-          font-family: Lobster;} }
+          font-family: myLobster;} }
   /*end of Masthead*/
 /*  hr {
                 display: block;
@@ -499,7 +620,7 @@ header.masthead {
                 margin-left: 4%;
     margin-right: 4%;
     text-align: center;
-    font-family: Lobster;
+    font-family: myLobster;
     font-size: 30px;
     color: #f05f40;
                 
@@ -523,7 +644,7 @@ header.masthead {
             }
 /*            .thankYouText{
     text-align: center;
-    font-family: Pacifico;
+    font-family: myPacifico;
     font-size: 40px;
     margin-top: 4%;
             }*/
@@ -583,7 +704,18 @@ body{
     overflow-scrolling: touch;
     background: cornsilk;
     font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+    
 }
 .playPause{
     float:left;height:50px;padding:15px 15px;font-size:30px;line-height:20px;
 }
+
+.card-image{
+    
+}
+/*.image-position{
+    border-radius: 6px;
+    max-height: 515px;
+    margin-left: 16%;
+    margin-bottom: 11%;
+}*/

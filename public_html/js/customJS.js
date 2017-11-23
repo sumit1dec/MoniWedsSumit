@@ -70,11 +70,14 @@ $(function () {
 });
 
 $(document).ready(function() {
+    
  $(".navbar-nav li a").click(function(event) {
     $(".navbar-collapse").collapse('hide');
   });
 });
-
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
 document.onreadystatechange = function () {
   var state = document.readyState
   if (state == 'interactive') {
