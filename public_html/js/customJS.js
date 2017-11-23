@@ -70,7 +70,7 @@ $(function () {
 });
 
 $(document).ready(function() {
-    
+   
  $(".navbar-nav li a").click(function(event) {
     $(".navbar-collapse").collapse('hide');
   });
@@ -122,4 +122,15 @@ else{
     document.getElementById('myAudio').play();
 }
     
+});
+$(".carousel").swipe({
+
+  swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+    if (direction == 'left') $(this).carousel('next');
+    if (direction == 'right') $(this).carousel('prev');
+
+  },
+  allowPageScroll:"vertical"
+
 });
