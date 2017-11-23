@@ -54,15 +54,7 @@
 	.carousel-inner .prev		 { left: -100%; }
 	.active > div { display:none; }
 	.active > div:first-child { display:block; }
-         .textParaImg{
-                color: #222;
-                
-                font-family: myIndieFlower;
-                font-size: 18px;
-                font-weight: bold;
-                text-align: center;
-
-            }
+        
               .countdown-header{
                 text-align: center;
                 font-size: 52px;
@@ -254,15 +246,7 @@
 	.active > div { display:none; }
 	.active > div:first-child { display:block; }
 	.active > div:first-child + div { display:block; }
-         .textParaImg{
-                color: #222;
-                
-                font-family: myIndieFlower;
-                font-size: 26px;
-                font-weight: bold;
-                text-align: center;
-
-            }
+         
 }
 @media (min-width: 992px ) {
     .eventsInvite{
@@ -343,15 +327,7 @@
                 font-family: Flavors;
 
             }
-     .textParaImg{
-                color: #222;
-                
-                font-family: myIndieFlower;
-                font-size: 26px;
-                font-weight: bold;
-                text-align: center;
-
-            }
+     
      .story-header{
                 text-align: center;
                 font-size: 5vw;
@@ -424,6 +400,10 @@ header.masthead {
       margin-bottom: 50px;
       color: rgba(255, 255, 255, 0.7); }
   @media (max-width: 767px) {
+       .img-circle {
+
+                height: 54vh;
+            }
       .pageFooter1{
     float:  left;
     font-size: 6px;
@@ -467,8 +447,22 @@ header.masthead {
             max-width: 80%;
             margin-right: auto;
             margin-left: auto; 
-          font-family: myLobster;} }
+          font-family: myLobster;} 
+  .textParaImg{
+                color: #222;
+                
+                font-family: myIndieFlower;
+                font-size: 26px;
+                font-weight: bold;
+                text-align: center;
+
+            }
+  }
   @media (max-width: 991px) and (min-width: 768px) {
+       .img-circle {
+
+                height: 54vh;
+            }
       .pageFooter1{
     float:  left;
     font-size: 7px;
@@ -515,8 +509,23 @@ header.masthead {
             max-width: 80%;
             margin-right: auto;
             margin-left: auto; 
-          font-family: myLobster;} }
+          font-family: myLobster;} 
+  .textParaImg{
+                color: #222;
+                
+                font-family: myIndieFlower;
+                font-size: 26px;
+                font-weight: bold;
+                text-align: center;
+
+            }
+  }
   @media (max-width: 1023px) and (min-width: 992px) {
+      
+       .img-circle {
+
+                height: 38vh;
+            }
       .pageFooter1{
     float:  left;
 }
@@ -534,7 +543,7 @@ header.masthead {
       
     header.masthead {
       height: 100%;
-      min-height: 98vh; }
+      min-height: 900px; }
       header.masthead .header-content {
         position: absolute;
         top: 50%;
@@ -553,8 +562,30 @@ header.masthead {
             font-family: myLobster;
             max-width: 80%;
             margin-right: auto;
-            margin-left: auto; } }
+            margin-left: auto; }
+  .textParaImg{
+                color: #222;
+                
+                font-family: myIndieFlower;
+                font-size: 15px;
+                font-weight: bold;
+                text-align: center;
+
+            }}
     @media (min-width: 1024px) {
+         .img-circle {
+
+                height: 54vh;
+            }
+        .textParaImg{
+                color: #222;
+                
+                font-family: myIndieFlower;
+                font-size: 26px;
+                font-weight: bold;
+                text-align: center;
+
+            }
         .pageFooter1{
     float:  left;
     font-size: 10px;
@@ -582,7 +613,7 @@ header.masthead {
 }
     header.masthead {
       height: 100%;
-      min-height: 100vh; }
+      min-height: 960px }
       header.masthead .header-content {
         position: absolute;
         top: 50%;
