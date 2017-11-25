@@ -829,5 +829,8 @@ header.masthead {
 }
 
 .carousel-inner>.item {
-     transition: transform .4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+     transition: transform .4s transform .4s ease-in-out;
+}
+.storyImage{
+    text-align: center;
 }
