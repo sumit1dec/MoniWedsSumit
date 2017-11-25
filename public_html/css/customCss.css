@@ -26,7 +26,7 @@
                 /*height: 435px;*/
             }
 .carousel-control 			 { width:  4%; }
-.carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
+/*.carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}*/
 @media (max-width: 767px) {
 
      .story-header{    text-align: center;
@@ -58,10 +58,10 @@
         
               .countdown-header{
                 text-align: center;
-                font-size: 52px;
+                font-size: 45px;
                 color: #fff;
                 padding-top: 2%;
-                font-family: Flavors;
+                font-family: myIndieFlower;
 
             }
              .countdown  {
@@ -98,7 +98,7 @@
             }
             header.masthead .header-content .header-content-inner h1 {
         font-family: myMonoton;
-      font-size: 30px;
+      font-size: 24px !important;
       /*font-weight: 700;*/
       margin-top: 153%;
       margin-bottom: 0;
@@ -134,7 +134,7 @@
     height: 330px;
     border: 5px solid #f05f40;
     border-radius: 50%;
-        margin-left: 3%;
+        
             }
 }
 @media (min-width: 767px) and (max-width: 992px ) {
@@ -217,7 +217,7 @@
                 font-size: 60px;
                 color: #fff;
                 padding-top: 2%;
-                font-family: Flavors;
+                font-family: myIndieFlower;
 
             }
      .story-header{
@@ -327,7 +327,7 @@
                 font-size: 60px;
                 color: #fff;
                 /*padding-top: 2%;*/
-                font-family: Flavors;
+                font-family: myIndieFlower;
 
             }
      
@@ -375,7 +375,7 @@ header.masthead {
   min-height: auto;
   text-align: center;
   color: white;
-  background-image: url("../external/images/sumoni1_2.jpg");
+  background-image: url("../external/images/Us/Us_Small.jpg");
   background-size: contain;
   
   background-position: center;
@@ -412,7 +412,7 @@ header.masthead {
 }
        .img-circle {
 
-                height: 54vh;
+                height: 48vh;
             }
       .pageFooter1{
     float:  left;
@@ -434,13 +434,13 @@ header.masthead {
 }
       .image-position{
     border-radius: 6px;
-    max-height: 162px;
-    margin-left: 1%;
+    max-height: 160px;
+    /*margin-left: 1%;*/
     margin-bottom: 11%;
 }
     header.masthead {
       height: 100%;
-      min-height: 760px; }
+      min-height: 730px; }
       header.masthead .header-content {
         position: absolute;
         top: 50%;
@@ -455,7 +455,7 @@ header.masthead {
           header.masthead .header-content .header-content-inner h1 {
             font-size: 35px; }
           header.masthead .header-content .header-content-inner p {
-            font-size: 36px;
+            font-size: 24px;
             max-width: 80%;
             margin-right: auto;
             margin-left: auto; 
@@ -468,6 +468,15 @@ header.masthead {
                 font-weight: bold;
                 text-align: center;
 
+            }
+            .eventsInviteSangeet{
+                /*margin-left: 4%;*/
+    /*margin-left: 6%;*/
+    text-align: center;
+    font-family: myLobster;
+    font-size: 30px;
+    color: #f05f40;
+                
             }
   }
   @media (max-width: 991px) and (min-width: 768px) {
@@ -539,6 +548,15 @@ header.masthead {
                 text-align: center;
 
             }
+            .eventsInviteSangeet{
+                /*margin-left: 4%;*/
+    margin-left: 6%;
+    text-align: center;
+    font-family: myLobster;
+    font-size: 30px;
+    color: #f05f40;
+                
+            }
   }
   @media (max-width: 1023px) and (min-width: 992px) {
       body{
@@ -598,7 +616,17 @@ header.masthead {
                 font-weight: bold;
                 text-align: center;
 
-            }}
+            }
+  .eventsInviteSangeet{
+                /*margin-left: 4%;*/
+    margin-left: 6%;
+    text-align: center;
+    font-family: myLobster;
+    font-size: 30px;
+    color: #f05f40;
+                
+            }
+  }
     @media (min-width: 1024px) {
         body{
     overflow:scroll;
@@ -647,6 +675,9 @@ header.masthead {
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+.card-image {
+    text-align: center;
+}
     header.masthead {
       height: 100%;
       min-height: 960px }
@@ -668,7 +699,17 @@ header.masthead {
             max-width: 80%;
             margin-right: auto;
             margin-left: auto;
-          font-family: myLobster;} }
+          font-family: myLobster;}
+    .eventsInviteSangeet{
+                /*margin-left: 4%;*/
+    margin-left: 6%;
+    text-align: center;
+    font-family: myLobster;
+    font-size: 30px;
+    color: #f05f40;
+                
+            }
+    }
   /*end of Masthead*/
 /*  hr {
                 display: block;
@@ -683,15 +724,15 @@ header.masthead {
                 background-attachment: fixed;
                 background-position: center;
             }*/
-            .eventsInviteSangeet{
+/*            .eventsInviteSangeet{
                 margin-left: 4%;
-    margin-right: 4%;
+    margin-left: 6%;
     text-align: center;
     font-family: myLobster;
     font-size: 30px;
     color: #f05f40;
                 
-            }
+            }*/
             .eventsInviteWedding{
                 
             }
@@ -785,4 +826,8 @@ header.masthead {
     margin-top: -40px;
     /*width: 1px;  '0' will not work for Opera*/
     /*display: inline-block;*/
+}
+
+.carousel-inner>.item {
+     transition: transform .6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
