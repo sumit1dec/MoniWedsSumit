@@ -74,6 +74,18 @@ $(document).ready(function() {
  $(".navbar-nav li a").click(function(event) {
     $(".navbar-collapse").collapse('hide');
   });
+  
+  $(".carousel-inner").swipe( {
+						//Generic swipe handler for all directions
+						swipeLeft:function(event, direction, distance, duration, fingerCount) {
+							$(this).parent().carousel('next'); 
+						},
+						swipeRight: function() {
+							$(this).parent().carousel('prev'); 
+						},
+						//Default is 75px, set to 0 for demo so any distance triggers swipe
+						threshold:0
+					});
 });
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
@@ -123,14 +135,15 @@ else{
 }
     
 });
-$(".carousel").swipe({
+//$(".carousel").swipe({
+//
+//  swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+//
+//    if (direction == 'left') $(this).carousel('next');
+//    if (direction == 'right') $(this).carousel('prev');
+//
+//  },
+//  allowPageScroll:"vertical"
+//
+//});
 
-  swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-
-    if (direction == 'left') $(this).carousel('next');
-    if (direction == 'right') $(this).carousel('prev');
-
-  },
-  allowPageScroll:"vertical"
-
-});

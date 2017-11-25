@@ -40,7 +40,7 @@
     text-align: center;
     font-size: 11vw;
     color: #01579B;
-    height: 110px;
+    /*height: 110px;*/
     /* margin-top: 4%; */
     padding-top: 2%;
     font-family: myUnicaOne;
@@ -125,15 +125,16 @@
  .thankYouText{
     text-align: center;
     font-family: myPacifico;
-    font-size: 29px;
+    font-size: 27px;
     margin-top: 4%;
             }
             .eventsInvite{
                        width: 100%;
-    max-width: 100%;
-    height: 395px;
+       max-width: 90%;
+    height: 330px;
     border: 5px solid #f05f40;
     border-radius: 50%;
+        margin-left: 3%;
             }
 }
 @media (min-width: 767px) and (max-width: 992px ) {
@@ -422,24 +423,24 @@ header.masthead {
     font-size: 6px;
 }
       .event-name{
-    font-size: 44px;color: #222;
+    font-size: 38px;color: #222;
 }
       .event-address{ 
-          font-size: 90%;
+          font-size: 65%;
 }
 .event-time{
-    font-size: 80%;
+    font-size: 65%;
     
 }
       .image-position{
     border-radius: 6px;
-    max-height: 189px;
+    max-height: 162px;
     margin-left: 1%;
     margin-bottom: 11%;
 }
     header.masthead {
       height: 100%;
-      min-height: 100vh; }
+      min-height: 760px; }
       header.masthead .header-content {
         position: absolute;
         top: 50%;
@@ -490,29 +491,29 @@ header.masthead {
     font-size: 7px;
 }
       .event-name{
-    font-size: 44px;color: #222;
+    font-size: 41px;color: #222;
 }
 .event-reception{
         margin-bottom: 15vh;
 }
       .event-address{    
-          font-size: 72%;
+          font-size: 65%;
 }
 .event-time{
-    font-size: 72%;
+    font-size: 65%;
 }
       .image-position{
     border-radius: 6px;
-    max-height: 282px;
+    max-height: 235px;
     margin-left: 2%;
     margin-bottom: 11%;
       }
     header.masthead {
       height: 100%;
-      min-height: 98vh; }
+      min-height: 100vh; }
       header.masthead .header-content {
         position: absolute;
-        top: 50%;
+        top: 60%;
         padding: 0 50px;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -642,7 +643,7 @@ header.masthead {
     max-height: 485px;
     /*margin-left: 16%;*/
     margin-bottom: 11%;
-    background: url(../external/images/cards/frame.png);
+    /*background: url(../external/images/cards/frame.png);*/
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -779,3 +780,9 @@ header.masthead {
     margin-left: 16%;
     margin-bottom: 11%;
 }*/
+.scroll-height{
+    padding-top: 40px;
+    margin-top: -40px;
+    /*width: 1px;  '0' will not work for Opera*/
+    /*display: inline-block;*/
+}
