@@ -118,9 +118,6 @@ $('#return-to-top').click(function() {      // When arrow is clicked
     }, 500);
 });
 
-//$("#playButton").click(function(){
-//   document.getElementById('myAudio').play();
-//});
 $("#pauseButton").click(function(){
 if($("#pauseButton").hasClass("glyphicon-pause"))
 {
@@ -135,15 +132,4 @@ else{
 }
     
 });
-//$(".carousel").swipe({
-//
-//  swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-//
-//    if (direction == 'left') $(this).carousel('next');
-//    if (direction == 'right') $(this).carousel('prev');
-//
-//  },
-//  allowPageScroll:"vertical"
-//
-//});
 

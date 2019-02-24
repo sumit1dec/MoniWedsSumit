@@ -27,6 +27,78 @@
             }
 .carousel-control 			 { width:  4%; }
 /*.carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}*/
+.navbar-inverse .navbar-brand {
+                color: #fff;
+            }
+            .carousel{
+                background: #f05f40;
+                margin-top: 1%;
+                padding-top: 1%;
+                padding-bottom: 1%;
+            }
+
+            .carousel .item img{
+                margin: 0 auto;
+                border-radius: 3%;
+                height: 36vh;
+                max-height: 36vh;
+            }
+           
+            .amp{
+                font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+                font-style: italic;
+                font-weight: normal;
+                color: #fff;
+            }
+            .jumbotron p {
+                font-size: 26px;
+                text-align: center;
+                color: #fff;
+            }
+            .jumbotron {
+                background: #f05f40;
+                margin-bottom: 0;
+                padding-bottom: 0;
+                border-radius: 0;
+            }
+            .jumbotron h1{
+                color: #fff;
+            }
+
+            .container-fluid .jumbotron{
+                border-radius: 0;
+            }
+
+            #timer{
+                background: #222;
+                height: 110vh;
+                margin-top: 5%;
+                padding-top: 4%;
+
+            }
+            
+            hr{
+                margin-top: .4%;
+                margin-bottom: .4%
+            }
+            span {
+                display: block;
+                font-size: 20px;
+                color: white;
+            }
+
+
+            .rndImg{
+                width: 21%
+            }
+
+            .myStoryImg{
+                border: solid 8px #f05f40;
+            }
+            .textH2Img{
+                color: #fff;
+                padding-left: 13%;
+            }
 @media (max-width: 767px) {
 
      .story-header{    text-align: center;
@@ -470,14 +542,11 @@ header.masthead {
 
             }
             .eventsInviteSangeet{
-                /*margin-left: 4%;*/
-    /*margin-left: 6%;*/
-    text-align: center;
-    font-family: myLobster;
-    font-size: 30px;
-    color: #f05f40;
-                
-            }
+            text-align: center;
+            font-family: myLobster;
+            font-size: 30px;
+            color: #f05f40;
+                            }
   }
   @media (max-width: 991px) and (min-width: 768px) {
       body{
@@ -486,12 +555,11 @@ header.masthead {
     background: cornsilk;
     font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;font-size: 12px;
     
-}
-       .img-circle {
-
-                height: 54vh;
-            }
-      .pageFooter1{
+    }
+    .img-circle {
+     height: 54vh;
+     }
+    .pageFooter1{
     float:  left;
     font-size: 7px;
 }
@@ -499,7 +567,7 @@ header.masthead {
     float:  right;
     font-size: 7px;
 }
-      .event-name{
+     .event-name{
     font-size: 41px;color: #222;
 }
 .event-reception{
@@ -669,9 +737,9 @@ header.masthead {
         .image-position{
        border-radius: 6px;
     max-height: 485px;
-    /*margin-left: 16%;*/
+
     margin-bottom: 11%;
-    /*background: url(../external/images/cards/frame.png);*/
+
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -701,7 +769,7 @@ header.masthead {
             margin-left: auto;
           font-family: myLobster;}
     .eventsInviteSangeet{
-                /*margin-left: 4%;*/
+
     margin-left: 6%;
     text-align: center;
     font-family: myLobster;
@@ -710,63 +778,22 @@ header.masthead {
                 
             }
     }
-  /*end of Masthead*/
-/*  hr {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                color: #222;
-                height:20px;
-                background:url("../external/images/hrImage.jpg");
-                border:0;
-                border-color: #222;
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-position: center;
-            }*/
-/*            .eventsInviteSangeet{
-                margin-left: 4%;
-    margin-left: 6%;
-    text-align: center;
-    font-family: myLobster;
-    font-size: 30px;
-    color: #f05f40;
-                
-            }*/
-            .eventsInviteWedding{
-                
-            }
-            .eventsInviteReception{
-                
-            }
-/*            .eventsInvite{
-                       width: 100%;
-    max-width: 100%;
-    height: 395px;
-    border: 5px solid #f05f40;
-    border-radius: 50%;
-            }*/
             .thankYou{
                 background-color: cornsilk;
     
             }
-/*            .thankYouText{
-    text-align: center;
-    font-family: myPacifico;
-    font-size: 40px;
-    margin-top: 4%;
-            }*/
+
             .centerImage{
                     text-align: -webkit-center;
             }
-           #load{
+#load{
     width:100%;
     height:100%;
     position:fixed;
     z-index:9999;
     background:url("../external/images/loading.gif") no-repeat center center #fff;
-           }
-           #return-to-top {
+   }
+ #return-to-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -815,17 +842,11 @@ header.masthead {
 .card-image{
     
 }
-/*.image-position{
-    border-radius: 6px;
-    max-height: 515px;
-    margin-left: 16%;
-    margin-bottom: 11%;
-}*/
+
 .scroll-height{
     padding-top: 40px;
     margin-top: -40px;
-    /*width: 1px;  '0' will not work for Opera*/
-    /*display: inline-block;*/
+
 }
 
 .carousel-inner>.item {
